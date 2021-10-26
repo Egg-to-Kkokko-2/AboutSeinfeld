@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "About Seinfeld",
-  "author": "[2기-2반] 사은수",
+  "author": "사은수",
   "keywords": [
     "gatsby"
   ],
@@ -21,6 +21,7 @@
     "gatsby-plugin-emotion": "^7.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-sharp": "^4.0.0",
+    "gatsby-plugin-typescript": "^4.0.0",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-remark": "^5.0.0",
     "gatsby-transformer-sharp": "^4.0.0",
