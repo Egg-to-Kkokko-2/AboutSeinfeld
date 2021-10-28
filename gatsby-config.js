@@ -26,5 +26,24 @@ module.exports = {
       },
       __key: "pages",
     },
-  ],
+    {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/locales`,
+      name: `locale`
+    }
+  },
+  {
+    resolve: `gatsby-plugin-react-i18next`,
+    options: {
+      localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+      languages: [`en`, `ko`],
+      defaultLanguage: `ko`,
+      i18nextOptions: {
+        keySeparator: false,
+        nsSeparator: false
+      }
+    }
+  }
+  ]
 };
