@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "jsx": "preserve",
     "lib": [
       "dom",
@@ -10,8 +10,14 @@
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "allowJs": true
+    "allowJs": true,
+    "moduleResolution": "node",
+    "jsxImportSource": "@emotion/react"
+  },
+  "baseUrl": "./src",
+  "paths": {
+      "components/*": ["./components/*"],  
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".cache"],
 }
